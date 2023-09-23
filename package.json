@@ -19,7 +19,14 @@
     "build": "tsup src/index.js --format cjs,esm --clean --dts --target=node12.22",
     "dev": "nr build -- --watch",
     "fix": "eslint --fix .",
+    "size": "sizesnap",
     "test": "tsc; uvu -r tsm tests"
+  },
+  "sizesnap": {
+    "files": [
+      "./dist/*.js",
+      "./dist/*.ts"
+    ]
   },
   "publishConfig": {
     "access": "public"
@@ -36,6 +43,7 @@
     "preact": "^10.17.1",
     "preact-render-to-string": "^6.2.1",
     "prettier": "^3.0.3",
+    "sizesnap": "^0.2.1",
     "tsm": "^2.3.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
