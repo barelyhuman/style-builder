@@ -30,7 +30,7 @@ npm i @barelyhuman/style-builder -D
 
 ```js
 import { h } from "preact";
-import { extractStyles, setup, styled } from "@barelyhuman/styled-builder";
+import { extractStyles, setup, styled } from "@barelyhuman/style-builder";
 
 setup(h);
 
